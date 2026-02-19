@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>検索ページ</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Noto Sans JP -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>エンドフィールド 基質周回補助ツール</h1>
+    <h2>絞り込み</h2>
+    <div>
+        <button id="reset" style="color:#c00;border-color:#c00;">すべて解除</button>
+    </div>
+    <h3>レアリティ</h3>
+    <div id="rarity-buttons">
+        <button type="button" class="filter-btn" data-type="rarity" data-value="6">★6</button>
+        <button type="button" class="filter-btn" data-type="rarity" data-value="5">★5</button>
+    </div>
+
+    <h3>武器種</h3>
+    <div id="weapon-buttons">
+        <button type="button" class="filter-btn" data-type="kind" data-value="片手剣">片手剣</button>
+        <button type="button" class="filter-btn" data-type="kind" data-value="大剣">大剣</button>
+        <button type="button" class="filter-btn" data-type="kind" data-value="長柄武器">長柄武器</button>
+        <button type="button" class="filter-btn" data-type="kind" data-value="拳銃">拳銃</button>
+        <button type="button" class="filter-btn" data-type="kind" data-value="アーツユニット">アーツユニット</button>
+    </div>
+
+    <h3>基礎効果</h3>
+    <div id="base-buttons">
+        <button type="button" class="filter-btn" data-type="base" data-value="敏捷">敏捷</button>
+        <button type="button" class="filter-btn" data-type="base" data-value="筋力">筋力</button>
+        <button type="button" class="filter-btn" data-type="base" data-value="意志">意志</button>
+        <button type="button" class="filter-btn" data-type="base" data-value="知性">知性</button>
+        <button type="button" class="filter-btn" data-type="base" data-value="メイン能力">メイン能力</button>
+    </div>
+
+    <h3>付加効果</h3>
+    <div id="addition-buttons">
+        <button type="button" class="filter-btn" data-type="addition" data-value="攻撃力">攻撃力</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="HP">HP</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="物理">物理</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="灼熱">灼熱</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="電磁">電磁</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="寒冷">寒冷</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="寒冷">寒冷</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="自然">自然</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="寒冷">寒冷</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="会心率">会心率</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="アーツ強度">アーツ強度</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="必殺技効率">必殺技効率</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="アーツダメージ">アーツダメージ</button>
+        <button type="button" class="filter-btn" data-type="addition" data-value="回復効率">回復効率</button>
+    </div>
+
+    <h3>スキル効果</h3>
+    <div id="base-buttons">
+        <button type="button" class="filter-btn" data-type="skill" data-value="強攻">強攻</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="圧制">圧制</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="追襲">追襲</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="破砕">破砕</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="昂揚">昂揚</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="巧技">巧技</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="残虐">残虐</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="付術">付術</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="治癒">治癒</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="噴発">噴発</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="切骨">切骨</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="流回">流回</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="夜幕">夜幕</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="効率">効率</button>
+        <button type="button" class="filter-btn" data-type="skill" data-value="制圧">制圧</button>
+    </div>
+
+    <hr>
+    <h2>武器選択</h2>
+    <div id="filtered"></div>
+    <hr>
+    <h2>一緒に狙える基質</h2>
+    <div id="result"></div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
