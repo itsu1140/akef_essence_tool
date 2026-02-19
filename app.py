@@ -38,8 +38,4 @@ def essence():
 
 
 if __name__ == "__main__":
-    stage = Stage()
-    commons = stage.weapons_common_effect("芸術の独裁者")
-    for common in commons:
-        print(str(common))
     app.run(debug=True)
