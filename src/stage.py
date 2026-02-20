@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 
 import pandas as pd
@@ -8,7 +8,6 @@ from src.weapon import Weapon
 
 @dataclass
 class CommonEffectWeapon:
-    # 共通効果を強調表示できるようにする
     name: str
     effects: list[str]  # base, addition, skill
     is_common_effects: list[bool]  # base, addition, skill is common with target
@@ -30,14 +29,6 @@ class CommonEffectWeapon:
             string += eff + ("_" if iscommon else "") + "\t"
         return string
 
-    def to_dict(self):
-        return {
-            "name": self.name,
-            "effects": self.effects,
-            "is_common_effects": self.is_common_effects,
-            "motif": self.motif,
-        }
-
     def have_common(self):
         common = False
         for cf in self.is_common_effects:
@@ -55,14 +46,6 @@ class StageCommonEffectWeapons:
         for cew in self.common_effect_weapons:
             string += "\t" + str(cew) + "\n"
         return string
-
-    def to_dict(self):
-        return {
-            "stage": self.stage,
-            "common_effect_weapons": [
-                cew.to_dict() for cew in self.common_effect_weapons
-            ],
-        }
 
 
 class Stage:
@@ -90,9 +73,11 @@ class Stage:
                 if cw.have_common():
                     common_weapons.append(cw)
             cews.append(
-                StageCommonEffectWeapons(
-                    stage=st.name,
-                    common_effect_weapons=common_weapons,
-                ).to_dict(),
+                asdict(
+                    StageCommonEffectWeapons(
+                        stage=st.name,
+                        common_effect_weapons=common_weapons,
+                    ),
+                ),
             )
         return cews
