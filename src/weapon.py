@@ -12,7 +12,13 @@ class Weapon:
     def get_df(self) -> pd.DataFrame:
         return self.weapon_df.copy()
 
-    def filter_button(self, filters: dict[str : set[str]]) -> dict:
+    def filter_button(self, data: dict) -> dict:
+        filters = {}
+        for btn in data:
+            if btn["type"] not in filters:
+                filters[btn["type"]] = set()
+            filters[btn["type"]].add(btn["value"])
+
         masks = [
             self.weapon_df[col].isin(vals) for col, vals in filters.items() if vals
         ]

@@ -1,7 +1,7 @@
-from dataclasses import dataclass, field
+import os
+from dataclasses import dataclass
 
-import numpy as np
-import pandas as pd
+from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template, request
 
 from src.stage import Stage
@@ -19,13 +19,7 @@ def index():
 def weapon_filter():
     data = request.json.get("filters")
 
-    filters = {}
-    for btn in data:
-        if btn["type"] not in filters:
-            filters[btn["type"]] = set()
-        filters[btn["type"]].add(btn["value"])
-
-    result = Weapon().filter_button(filters)
+    result = Weapon().filter_button(data)
 
     return jsonify(result)
 
@@ -38,4 +32,5 @@ def essence():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    load_dotenv(".env")
+    app.run(debug=os.environ["DEBUG"] == "true")
