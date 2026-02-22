@@ -53,9 +53,7 @@
         <button type="button" class="filter-btn" data-type="addition" data-value="灼熱">灼熱</button>
         <button type="button" class="filter-btn" data-type="addition" data-value="電磁">電磁</button>
         <button type="button" class="filter-btn" data-type="addition" data-value="寒冷">寒冷</button>
-        <button type="button" class="filter-btn" data-type="addition" data-value="寒冷">寒冷</button>
         <button type="button" class="filter-btn" data-type="addition" data-value="自然">自然</button>
-        <button type="button" class="filter-btn" data-type="addition" data-value="寒冷">寒冷</button>
         <button type="button" class="filter-btn" data-type="addition" data-value="会心率">会心率</button>
         <button type="button" class="filter-btn" data-type="addition" data-value="アーツ強度">アーツ強度</button>
         <button type="button" class="filter-btn" data-type="addition" data-value="必殺技効率">必殺技効率</button>
@@ -88,10 +86,15 @@
     <hr>
     <h2>一緒に狙える基質</h2>
     <div id="result"></div>
+    <hr>
 
-    <!-- JS -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-
+    <script type="module" src="../static/js/main.js"></script>
 </body>
+
+<footer>
+    <a href="https://github.com/itsu1140/akef_essence_tool">
+        <img class=icon src="{{ url_for('static', filename='assets/github.png') }}">
+    </a>
+</footer>
 
 </html>
