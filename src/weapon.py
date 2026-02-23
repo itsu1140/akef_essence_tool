@@ -28,3 +28,7 @@ class Weapon:
         else:
             result = self.weapon_df.iloc[0:0]
         return result.to_dict(orient="records")
+
+    def get_weapon_data(self, weapon: str) -> pd.Series:
+        col = self.weapon_df.set_index("name").loc[weapon]
+        return col

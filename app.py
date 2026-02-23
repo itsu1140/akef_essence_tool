@@ -31,6 +31,12 @@ def essence():
     return jsonify(commons)
 
 
+@app.route("/weapon_data", methods=["POST"])
+def weapon_data():
+    weapon = request.json.get("name")
+    return jsonify(Weapon().get_weapon_data(weapon).to_dict())
+
+
 if __name__ == "__main__":
     load_dotenv(".env")
     app.run(debug=os.environ["DEBUG"] == "true")
