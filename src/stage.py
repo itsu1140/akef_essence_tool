@@ -30,10 +30,7 @@ class CommonEffectWeapon:
         return string
 
     def have_common(self):
-        common = False
-        for cf in self.is_common_effects:
-            common |= cf
-        return common
+        return self.is_common_effects[1] or self.is_common_effects[2]
 
 
 @dataclass
@@ -50,21 +47,21 @@ class StageCommonEffectWeapons:
 
 class Stage:
     def __init__(self):
-        data_path = Path("./data/stage.csv")
+        self.stage_df = pd.read_csv(Path("./data/stage.csv"))
         # remove last ";" and split with ";"
-        self.stage_df = pd.read_csv(data_path)
         self.stage_df.weapon = self.stage_df.weapon.str[:-1].str.split(";")
 
     def weapons_common_effect(self, weapon: str) -> dict:
         # ステージ毎に同時に狙える基質の内容とその武器を返す
         cews: list[StageCommonEffectWeapons] = []
-        weapon_df = Weapon().get_df()
+        w_data = Weapon()
+        weapon_df = w_data.get_df()
         for st in self.stage_df.itertuples():
             if weapon not in st.weapon:
                 continue
             # weapons matching essence dropped from stage
             stage_weapon = weapon_df[weapon_df.name.isin(st.weapon)]
-            target_weapon = weapon_df.set_index("name").loc[weapon]
+            target_weapon = w_data.get_weapon_data(weapon)
             common_weapons: list[CommonEffectWeapon] = []
             for wp in stage_weapon.itertuples():
                 if wp.name == weapon:  # skip target weapon
