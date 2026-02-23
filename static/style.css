@@ -45,3 +45,27 @@ button.active {
 .is-common {
     background-color: salmon;
 }
+
+footer {
+    margin-top: 40px;
+    text-align: left;
+    padding: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid #000;
+}
+
+td,
+th {
+    width: 200px;
+}
