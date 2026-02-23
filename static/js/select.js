@@ -30,11 +30,9 @@ function render_weapon_data(name) {
     })
         .then(res => res.json())
         .then(data => {
-            const container = document.getElementById("filtered");
-            const pretable = container.querySelector("#weapon-data");
-            if (pretable) pretable.remove();
+            const container = document.getElementById("selected-weapon-table");
+            container.innerHTML = "";
             const table = document.createElement("table");
-            table.id = "weapon-data";
             set_table_header(table, ["基礎効果", "付加効果", "スキル効果", "モチーフ"]);
             const tbody = document.createElement("tbody");
             add_table_col(tbody, [data.base, data.addition, data.skill, data.motif]);
