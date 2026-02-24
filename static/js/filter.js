@@ -1,4 +1,5 @@
 import { get_filtered_weapon } from "./api.js";
+import { select_weapon } from "./select.js";
 
 let activeFilters = []; // ONのボタン一覧
 
@@ -43,4 +44,5 @@ export function reset() {
     // clear
     document.getElementById("filtered").innerHTML = "";
     document.getElementById("result").innerHTML = "";
+    document.getElementById("selected-weapon-table").innerHTML = "";
 }
