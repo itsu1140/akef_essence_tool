@@ -31,6 +31,9 @@ function render_filtered(data) {
         const button = document.createElement("button");
         button.textContent = item.name;
         button.classList.add("filtered-btn");
+        button.addEventListener("click", (e) => {
+            select_weapon(e.target);
+        });
         container.appendChild(button);
     });
 }

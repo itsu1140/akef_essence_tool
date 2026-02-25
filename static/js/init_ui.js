@@ -1,5 +1,4 @@
 import { weapon_filter, reset } from "./filter.js"
-import { select_weapon } from "./select.js"
 
 export default function init() {
     document.getElementById("reset").addEventListener("click", reset);
@@ -10,10 +9,5 @@ export default function init() {
             btn.classList.toggle("active");
             weapon_filter(e.target);
         });
-    });
-
-    // select filtered weapon
-    document.getElementById("filtered").addEventListener("click", (e) => {
-        select_weapon(e.target);
     });
 }
