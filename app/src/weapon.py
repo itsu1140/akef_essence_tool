@@ -5,7 +5,7 @@ import pandas as pd
 
 class Weapon:
     def __init__(self) -> None:
-        data_path = Path("./data/weapon.csv")
+        data_path = Path("./app/data/weapon.csv")
         # NaN -> ""
         self.weapon_df = pd.read_csv(data_path, dtype=str, keep_default_na=False)
 

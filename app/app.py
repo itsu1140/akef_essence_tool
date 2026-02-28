@@ -1,11 +1,7 @@
-import os
-from dataclasses import dataclass
-
-from dotenv import load_dotenv
 from flask import Flask, jsonify, render_template, request
 
-from src.stage import Stage
-from src.weapon import Weapon
+from app.src.stage import Stage
+from app.src.weapon import Weapon
 
 app = Flask(__name__)
 
@@ -38,5 +34,4 @@ def weapon_data():
 
 
 if __name__ == "__main__":
-    load_dotenv(".env")
-    app.run(debug=os.environ["DEBUG"] == "true")
+    app.run(debug=True)
