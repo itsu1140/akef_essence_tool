@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, render_template, request
 
-from src.stage import Stage
-from src.weapon import Weapon
+from app.src.stage import Stage
+from app.src.weapon import Weapon
 
 app = Flask(__name__)
 
