@@ -9,4 +9,4 @@ COPY . .
 EXPOSE 10000
 
 # gunicorn 起動
-CMD ["uv", "run", "gunicorn", "app.app:app", "--bind", "0.0.0.0:10000", "--workers", "2"]
+CMD ["uv", "run", "gunicorn", "app.app:app", "--bind", "0.0.0.0:5000", "--workers", "2"]
