@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from src.weapon import Weapon
+from app.src.weapon import Weapon
 
 
 @dataclass
@@ -47,7 +47,7 @@ class StageCommonEffectWeapons:
 
 class Stage:
     def __init__(self):
-        self.stage_df = pd.read_csv(Path("./data/stage.csv"))
+        self.stage_df = pd.read_csv(Path("./app/data/stage.csv"))
         # remove last ";" and split with ";"
         self.stage_df.weapon = self.stage_df.weapon.str[:-1].str.split(";")
 

@@ -1,5 +1,8 @@
 debug:
-	uv run python3 app.py
+	uv run python3 app/app.py
+
+docker:
+	docker compose up -d --build
 
 build:
-	uv run gunicorn app:app
+	uv run gunicorn app.app:app
