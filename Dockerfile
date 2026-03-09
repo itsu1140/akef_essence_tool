@@ -6,7 +6,7 @@ RUN uv sync --no-dev
 COPY . .
 
 
-EXPOSE 10000
+EXPOSE 5000
 
 # gunicorn 起動
 CMD ["uv", "run", "gunicorn", "app.app:app", "--bind", "0.0.0.0:5000", "--workers", "2"]
