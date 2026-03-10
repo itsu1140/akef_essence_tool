@@ -1,5 +1,5 @@
 debug:
-	uv run python3 app/app.py
+	uv run python3 -m app.app
 
 docker:
 	docker compose up -d --build
