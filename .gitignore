@@ -10,5 +10,5 @@ wheels/
 .venv
 
 test/
-data/images/
+images/
 .env
