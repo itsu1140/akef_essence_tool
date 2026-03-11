@@ -30,8 +30,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/user/game/...
+            cd ${{ secrets.DEPLOY_PATH }}
             docker compose pull
             docker compose up -d
-
-# TODO: fix cd path
