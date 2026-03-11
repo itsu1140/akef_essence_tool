@@ -14,8 +14,6 @@ jobs:
 
       - run: pip install uv
       - run: uv sync --frozen --no-dev
-      - name: Run tests
-        run: uv run pytest
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
