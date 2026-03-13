@@ -33,9 +33,9 @@ function render_weapon_data(name) {
             const container = document.getElementById("selected-weapon-table");
             container.innerHTML = "";
             const table = document.createElement("table");
-            set_table_header(table, ["基礎効果", "付加効果", "スキル効果", "モチーフ"]);
+            set_table_header(table, ["武器", "基礎効果", "付加効果", "スキル効果", "モチーフ"]);
             const tbody = document.createElement("tbody");
-            add_table_col(tbody, [data.base, data.addition, data.skill, data.motif]);
+            add_table_col(tbody, [name, data.base, data.addition, data.skill, data.motif]);
             table.appendChild(tbody);
             container.appendChild(table);
         });
