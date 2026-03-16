@@ -32,12 +32,15 @@ function render_weapon_data(name) {
         .then(data => {
             const container = document.getElementById("selected-weapon-table");
             container.innerHTML = "";
+            const wrapper = document.createElement("div");
+            wrapper.classList.add("table-wrapper");
             const table = document.createElement("table");
             set_table_header(table, ["武器", "基礎効果", "付加効果", "スキル効果", "モチーフ"]);
             const tbody = document.createElement("tbody");
             add_table_col(tbody, [name, data.base, data.addition, data.skill, data.motif]);
             table.appendChild(tbody);
-            container.appendChild(table);
+            wrapper.appendChild(table);
+            container.appendChild(wrapper);
         });
 }
 
@@ -59,11 +62,19 @@ function render_essence(data) {
 
     data.forEach(item => {
         const stage = document.createElement("div");
-        const h3 = document.createElement("h3");
+        stage.classList.add("result-card");
+
+        const header = document.createElement("div");
+        header.classList.add("result-card-header");
+        header.textContent = item.stage;
+
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("table-wrapper");
+
         const table = document.createElement("table");
         set_table_header(table, ["武器", "基礎効果", "付加効果", "スキル効果", "モチーフ"]);
         const tbody = document.createElement("tbody");
-        h3.textContent = item.stage;
+
         item.common_effect_weapons.forEach(cew => {
             const col = document.createElement("tr");
             add_col_element(col, cew.name, "td");
@@ -78,9 +89,11 @@ function render_essence(data) {
             add_col_element(col, cew.motif, "td");
             tbody.appendChild(col);
         });
-        stage.appendChild(h3);
+
+        stage.appendChild(header);
         table.appendChild(tbody);
-        stage.appendChild(table);
+        wrapper.appendChild(table);
+        stage.appendChild(wrapper);
         container.appendChild(stage);
     });
 }
