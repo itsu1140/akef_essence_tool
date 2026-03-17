@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   deploy:
@@ -32,10 +32,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
-            docker ps -q --filter publish=5000 | xargs -r docker rm -f
             docker rm -f akef-app 2>/dev/null || true
             docker run -d \
               --name akef-app \
               --restart unless-stopped \
-              -p 5000:5000 \
+              -p 3000:3000 \
               ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
