@@ -1,0 +1,461 @@
+[
+  {
+    "name": "フレイムフォージ",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "攻撃力",
+    "skill": "夜幕",
+    "motif": "レーヴァテイン"
+  },
+  {
+    "name": "芸術の独裁者",
+    "kind": "拳銃",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "会心率",
+    "skill": "切骨",
+    "motif": "イヴォンヌ"
+  },
+  {
+    "name": "使命必達",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "必殺技効率",
+    "skill": "追襲",
+    "motif": "ギルベルタ"
+  },
+  {
+    "name": "騎士精神",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "HP",
+    "skill": "治癒",
+    "motif": ""
+  },
+  {
+    "name": "遺忘",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "アーツダメージ",
+    "skill": "夜幕",
+    "motif": ""
+  },
+  {
+    "name": "破壊ユニット",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "アーツ強度",
+    "skill": "夜幕",
+    "motif": ""
+  },
+  {
+    "name": "作品:蝕跡",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "自然",
+    "skill": "圧制",
+    "motif": ""
+  },
+  {
+    "name": "蒼星の囁き",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "回復効率",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "同類共食",
+    "kind": "拳銃",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "アーツダメージ",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "楔",
+    "kind": "拳銃",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "会心率",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "ナビゲーター",
+    "kind": "拳銃",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "寒冷",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "J.E.T.",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "攻撃力",
+    "skill": "圧制",
+    "motif": ""
+  },
+  {
+    "name": "勇猛",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "物理",
+    "skill": "巧技",
+    "motif": ""
+  },
+  {
+    "name": "負山",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "物理",
+    "skill": "効率",
+    "motif": "リーフォン"
+  },
+  {
+    "name": "破砕君主",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "筋力",
+    "addition": "会心率",
+    "skill": "破砕",
+    "motif": ""
+  },
+  {
+    "name": "昔日の逸品",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "HP",
+    "skill": "効率",
+    "motif": ""
+  },
+  {
+    "name": "鑑",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "攻撃力",
+    "skill": "圧制",
+    "motif": ""
+  },
+  {
+    "name": "クラヴェンガー",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "筋力",
+    "addition": "攻撃力",
+    "skill": "噴発",
+    "motif": "ラストライト"
+  },
+  {
+    "name": "大雷斑",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "筋力",
+    "addition": "HP",
+    "skill": "治癒",
+    "motif": "エンバー"
+  },
+  {
+    "name": "白夜新星",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "アーツ強度",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "輝かしき名声",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "物理",
+    "skill": "残虐",
+    "motif": ""
+  },
+  {
+    "name": "テルミット・カッター",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "攻撃力",
+    "skill": "流回",
+    "motif": ""
+  },
+  {
+    "name": "フーヤオ",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "会心率",
+    "skill": "夜幕",
+    "motif": ""
+  },
+  {
+    "name": "ダークトーチ",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "灼熱",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "不知帰",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "攻撃力",
+    "skill": "流回",
+    "motif": "ポグラニチニク"
+  },
+  {
+    "name": "大願",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "攻撃力",
+    "skill": "付術",
+    "motif": "管理人"
+  },
+  {
+    "name": "O.B.J.術識",
+    "kind": "アーツユニット",
+    "rarity": "5",
+    "base": "知性",
+    "addition": "アーツ強度",
+    "skill": "追襲",
+    "motif": ""
+  },
+  {
+    "name": "布教の自由",
+    "kind": "アーツユニット",
+    "rarity": "5",
+    "base": "意志",
+    "addition": "回復効率",
+    "skill": "治癒",
+    "motif": "ザイヒ"
+  },
+  {
+    "name": "求心の槍",
+    "kind": "長柄武器",
+    "rarity": "5",
+    "base": "意志",
+    "addition": "電磁",
+    "skill": "圧制",
+    "motif": "アイビーエナ"
+  },
+  {
+    "name": "術無",
+    "kind": "アーツユニット",
+    "rarity": "5",
+    "base": "意志",
+    "addition": "必殺技効率",
+    "skill": "昂揚",
+    "motif": ""
+  },
+  {
+    "name": "弔いの詩",
+    "kind": "アーツユニット",
+    "rarity": "5",
+    "base": "知性",
+    "addition": "攻撃力",
+    "skill": "夜幕",
+    "motif": ""
+  },
+  {
+    "name": "正義嵌合",
+    "kind": "長柄武器",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "必殺技効率",
+    "skill": "残虐",
+    "motif": ""
+  },
+  {
+    "name": "十二問",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "敏捷",
+    "addition": "攻撃力",
+    "skill": "付術",
+    "motif": "アークライト"
+  },
+  {
+    "name": "O.B.J.鋭矛",
+    "kind": "長柄武器",
+    "rarity": "5",
+    "base": "意志",
+    "addition": "物理",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "荒野迷走",
+    "kind": "アーツユニット",
+    "rarity": "5",
+    "base": "知性",
+    "addition": "電磁",
+    "skill": "付術",
+    "motif": "ペリカ"
+  },
+  {
+    "name": "合理的決別",
+    "kind": "拳銃",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "灼熱",
+    "skill": "追襲",
+    "motif": "ウルフガード"
+  },
+  {
+    "name": "堅城鋳造者",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "知性",
+    "addition": "必殺技効率",
+    "skill": "昂揚",
+    "motif": ""
+  },
+  {
+    "name": "O.B.J.迅速",
+    "kind": "拳銃",
+    "rarity": "5",
+    "base": "敏捷",
+    "addition": "必殺技効率",
+    "skill": "噴発",
+    "motif": ""
+  },
+  {
+    "name": "O.B.J.重責",
+    "kind": "大剣",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "HP",
+    "skill": "効率",
+    "motif": ""
+  },
+  {
+    "name": "フィンチェイサー3.0",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "必殺技効率",
+    "skill": "圧制",
+    "motif": "アレッシュ"
+  },
+  {
+    "name": "鋼鉄余音",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "敏捷",
+    "addition": "物理",
+    "skill": "巧技",
+    "motif": ""
+  },
+  {
+    "name": "千古恒常",
+    "kind": "大剣",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "アーツ強度",
+    "skill": "残虐",
+    "motif": "ダパン"
+  },
+  {
+    "name": "仰止",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "敏捷",
+    "addition": "物理",
+    "skill": "夜幕",
+    "motif": "チェン"
+  },
+  {
+    "name": "最期の声",
+    "kind": "大剣",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "HP",
+    "skill": "治癒",
+    "motif": "スノーシャイン"
+  },
+  {
+    "name": "O.B.J.軽刃",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "敏捷",
+    "addition": "攻撃力",
+    "skill": "流回",
+    "motif": ""
+  },
+  {
+    "name": "探龍",
+    "kind": "大剣",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "必殺技効率",
+    "skill": "噴発",
+    "motif": ""
+  },
+  {
+    "name": "作品:衆生",
+    "kind": "拳銃",
+    "rarity": "5",
+    "base": "敏捷",
+    "addition": "アーツダメージ",
+    "skill": "付術",
+    "motif": ""
+  },
+  {
+    "name": "落草",
+    "kind": "拳銃",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "攻撃力",
+    "skill": "噴発",
+    "motif": "タンタン"
+  },
+  {
+    "name": "望郷",
+    "kind": "拳銃",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "寒冷",
+    "skill": "圧制",
+    "motif": ""
+  },
+  {
+    "name": "狼緋",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "",
+    "addition": "",
+    "skill": "",
+    "motif": "ロッシ"
+  },
+  {
+    "name": "栄光の記憶",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "会心率",
+    "skill": "夜幕",
+    "motif": ""
+  }
+]

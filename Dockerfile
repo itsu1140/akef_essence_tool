@@ -1,12 +1,30 @@
-FROM python:3.12-slim
-RUN pip install uv
+FROM node:22-alpine AS base
+
+FROM base AS deps
 WORKDIR /app
-COPY pyproject.toml uv.lock* ./
-RUN uv sync --frozen --no-dev
+COPY package.json package-lock.json* ./
+RUN npm ci
+
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+RUN npm run build
 
+FROM base AS runner
+WORKDIR /app
+ENV NODE_ENV=production
 
-EXPOSE 5000
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 nextjs
 
-# gunicorn 起動
-CMD ["uv", "run", "gunicorn", "app.app:app", "--bind", "0.0.0.0:5000", "--workers", "2"]
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+EXPOSE 3000
+ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
+
+CMD ["node", "server.js"]
