@@ -1,0 +1,28 @@
+{
+  "name": "endfield",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "node --import tsx/esm scripts/prebuild.mts",
+    "predev": "node --import tsx/esm scripts/prebuild.mts",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "pages:build": "node --import tsx/esm scripts/prebuild.mts && npx @cloudflare/next-on-pages",
+    "pages:preview": "npx wrangler pages dev"
+  },
+  "dependencies": {
+    "next": "15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "^1",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4.19.3",
+    "typescript": "^5",
+    "wrangler": "^3"
+  }
+}
