@@ -1,7 +1,7 @@
 # エンドフィールド基質周回補助ツール / Endfield Essence Farming Helper
 
 メインに狙う武器の基質厳選の際に，同条件で落ちる可能性のある基質を簡単に探すことのできるツールです
-[こちら](https://akef-essence-tool.onrender.com/) でデプロイしています
+[こちら](https://akef-essence-tool.pages.dev/) でデプロイしています
 
 ## バージョンアップデート
 
