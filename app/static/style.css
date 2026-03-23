@@ -67,6 +67,23 @@ header h1 {
     padding: 18px 20px;
 }
 
+.migration-notice {
+    background: rgba(248, 81, 73, 0.1);
+    border-color: rgba(248, 81, 73, 0.4);
+    color: var(--danger);
+    text-align: center;
+    font-weight: 500;
+}
+
+.migration-notice p {
+    margin: 0;
+}
+
+.migration-notice a {
+    color: var(--danger);
+    font-weight: 700;
+}
+
 .card-title {
     font-size: 0.7rem;
     font-weight: 700;
