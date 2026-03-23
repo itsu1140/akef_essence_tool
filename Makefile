@@ -1,8 +1,11 @@
 docker:
 	docker compose up --build
 
-pages:
-	NEXT_BUILD_TARGET=cloudflare npm run pages:build
+docker-fresh:
+	docker compose build --no-cache && docker compose up
+
+down:
+	docker compose down
 
 clean:
 	rm -rf .next .vercel node_modules src/generated
