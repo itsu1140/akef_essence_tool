@@ -9,6 +9,14 @@ interface Props {
   stages: StageCommonEffectWeapons[];
 }
 
+const STAGE_HEADER_COLORS: Record<string, string> = {
+  中枢エリア: "#fffe0f",
+  源石研究パーク: "#fffe0f",
+  エネルギー高地: "#fffe0f",
+  武陵城: "#17abab",
+  清波砦: "#17abab",
+};
+
 export default function EssenceResult({ selectedWeapon, stages }: Props) {
   return (
     <section className="card">
@@ -46,7 +54,16 @@ export default function EssenceResult({ selectedWeapon, stages }: Props) {
       <div className="result-list">
         {stages.map((stage) => (
           <div key={stage.stage} className="result-card">
-            <div className="result-card-header">{stage.stage}</div>
+            <div
+              className="result-card-header"
+              style={
+                STAGE_HEADER_COLORS[stage.stage]
+                  ? { color: STAGE_HEADER_COLORS[stage.stage] }
+                  : undefined
+              }
+            >
+              {stage.stage}
+            </div>
             <div className="table-wrapper">
               <table>
                 <thead>
