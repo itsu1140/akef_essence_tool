@@ -13,6 +13,7 @@ const STAGE_HEADER_COLORS: Record<string, string> = {
   中枢エリア: "#fffe0f",
   源石研究パーク: "#fffe0f",
   エネルギー高地: "#fffe0f",
+  鉱山エリア: "#fffe0f",
   武陵城: "#17abab",
   清波砦: "#17abab",
 };
