@@ -444,9 +444,9 @@
     "name": "狼緋",
     "kind": "片手剣",
     "rarity": "6",
-    "base": "",
-    "addition": "",
-    "skill": "",
+    "base": "敏捷",
+    "addition": "会心率",
+    "skill": "切骨",
     "motif": "ロッシ"
   },
   {
