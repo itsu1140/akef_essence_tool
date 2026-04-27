@@ -1,6 +1,8 @@
 services:
   web:
-    build: .
+    image: akef-app:latest
     ports:
       - "3000:3000"
     restart: unless-stopped
+    environment:
+      - ROOT_PATH=/akef-essence
