@@ -6,8 +6,7 @@ const rootPath = process.env.ROOT_PATH || "";
 const nextConfig: NextConfig = {
   output: isCloudflare ? undefined : "standalone",
   basePath: rootPath,
-  assetPrefix: rootPath,
-  env: { ROOT_PATH: rootPath },
+  assetPrefix: rootPath ? `${rootPath}/assets` : "",
 };
 
 export default nextConfig;
