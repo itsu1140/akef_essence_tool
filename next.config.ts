@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   output: isCloudflare ? undefined : "standalone",
   basePath: rootPath,
   assetPrefix: rootPath,
+  env: { ROOT_PATH: rootPath },
 };
 
 export default nextConfig;
