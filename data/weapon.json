@@ -475,5 +475,113 @@
     "addition": "攻撃力",
     "skill": "圧制",
     "motif": "ゾアン・ファンイ"
+  },
+  {
+    "name": "ファーサイト",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "メイン能力",
+    "addition": "アーツ強度",
+    "skill": "強攻",
+    "motif": ""
+  },
+  {
+    "name": "スイーツタイム",
+    "kind": "片手剣",
+    "rarity": "5",
+    "base": "筋力",
+    "addition": "回復効率",
+    "skill": "治癒",
+    "motif": "プチエナ"
+  },
+  {
+    "name": "赤纓",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "筋力",
+    "addition": "攻撃力",
+    "skill": "巧技",
+    "motif": "ミ・フ"
+  },
+  {
+    "name": "ファントムペイン",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "筋力",
+    "addition": "アーツ強度",
+    "skill": "圧制",
+    "motif": ""
+  },
+  {
+    "name": "カーマインヴェール",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "灼熱",
+    "skill": "流回",
+    "motif": "カミーユ"
+  },
+  {
+    "name": "灯火の使命",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "必殺技効率",
+    "skill": "効率",
+    "motif": ""
+  },
+  {
+    "name": "プリズムナイトデビュー",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "回復効率",
+    "skill": "治癒",
+    "motif": "リーノ"
+  },
+  {
+    "name": "黄金時代",
+    "kind": "長柄武器",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "回復効率",
+    "skill": "追襲",
+    "motif": ""
+  },
+  {
+    "name": "四二式・粛陣",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "必殺技効率",
+    "skill": "噴発",
+    "motif": "オクギ"
+  },
+  {
+    "name": "連結点",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "必殺技効率",
+    "skill": "効率",
+    "motif": ""
+  },
+  {
+    "name": "寒夜の影",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "攻撃力",
+    "skill": "噴発",
+    "motif": "ティフォロス"
+  },
+  {
+    "name": "苦難の果",
+    "kind": "アーツユニット",
+    "rarity": "6",
+    "base": "敏捷",
+    "addition": "自然",
+    "skill": "噴発",
+    "motif": ""
   }
 ]
