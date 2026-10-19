@@ -17,6 +17,11 @@ const STAGE_HEADER_COLORS: Record<string, string> = {
   武陵城: "#17abab",
   清波砦: "#17abab",
   首礎: "#17abab",
+  実験区域: "#17abab",
+  蔵剣谷: "#17abab",
+  応龍関: "#17abab",
+  北部封鎖区域: "#17abab",
+  雪松林: "#17abab",
 };
 
 export default function EssenceResult({ selectedWeapon, stages }: Props) {
