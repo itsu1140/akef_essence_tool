@@ -583,5 +583,41 @@
     "addition": "自然",
     "skill": "噴発",
     "motif": ""
+  },
+  {
+    "name": "複合工業",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "電磁",
+    "skill": "噴発",
+    "motif": ""
+  },
+  {
+    "name": "問月",
+    "kind": "片手剣",
+    "rarity": "6",
+    "base": "意志",
+    "addition": "攻撃力",
+    "skill": "付術",
+    "motif": "ミンホ"
+  },
+  {
+    "name": "玉中身",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "寒冷",
+    "skill": "効率",
+    "motif": "スー"
+  },
+  {
+    "name": "悠久の継承",
+    "kind": "大剣",
+    "rarity": "6",
+    "base": "知性",
+    "addition": "寒冷",
+    "skill": "効率",
+    "motif": ""
   }
 ]
